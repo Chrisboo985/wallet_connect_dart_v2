@@ -119,8 +119,9 @@ class Core with Events implements ICore {
       logger.i('Core Initilization Success');
     } catch (error) {
       logger.w(
-          'Core Initilization Failure at epoch ${DateTime.now().millisecondsSinceEpoch}',
-          error);
+          'Core Initilization Failure at epoch ${DateTime.now().millisecondsSinceEpoch}'
+          // , error
+      );
       rethrow;
     }
   }
